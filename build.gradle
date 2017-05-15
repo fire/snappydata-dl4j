@@ -12,7 +12,7 @@ shadowJar {
 
 allprojects {
 
-  version = '0.7.0'
+  version = '0.8.0'
 
   repositories {
     mavenCentral()
@@ -84,6 +84,8 @@ dependencies {
 
   compile files(fileTree(dir: 'lib', includes: ['*.jar']))
 
+  // https://mvnrepository.com/artifact/org.alluxio/alluxio-core-client
+  compile group: 'org.alluxio', name: 'alluxio-core-client', version: '1.4.0'
   // https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-core
   compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '0.8.0'
   // https://mvnrepository.com/artifact/com.beust/jcommander
