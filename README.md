@@ -1,0 +1,3 @@
+# Install
+
+./gradlew shadowJar
